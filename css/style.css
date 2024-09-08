@@ -1,0 +1,23 @@
+/* .active {
+    background-color: #6887ff !important;
+    color: white;
+  } */
+.btn {
+  cursor: pointer;
+}
+
+.breadcrumb-item > a > h5 {
+  color: #6887ff;
+}
+
+.breadcrumb-item > a:hover > h5 {
+  text-decoration: underline;
+}
+
+.calender-icon{
+    background: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
