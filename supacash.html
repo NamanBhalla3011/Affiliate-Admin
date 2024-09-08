@@ -42,9 +42,7 @@
               <li>
                 <a href="dashboard.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/dashboard.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">Dashboard</span>
                 </a>
@@ -52,9 +50,7 @@
               <li>
                 <a href="affiliates.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/affiliates.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">Affiliates</span>
                 </a>
@@ -62,9 +58,7 @@
               <li>
                 <a href="affiliates-commission.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/commission.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">Affiliates Commission</span>
                 </a>
@@ -72,23 +66,18 @@
               <li>
                 <a href="supacash.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/voucher.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">SupaCash</span>
                 </a>
               </li>
-
               <li>
                 <a>
                   <span class="nav-caret">
                     <i class="fa fa-caret-down"></i>
                   </span>
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe1b8;
-                      <span ui-include="'../assets/images/i_8.svg'"></span>
-                    </i>
+                    <img src="images/Reports.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">Reports</span>
                 </a>
@@ -139,7 +128,7 @@
             <li class="nav-item dropdown">
               <a href class="nav-link dropdown-toggle text-ellipsis p-0" data-toggle="dropdown">
                 <span class="avatar w-32">
-                  <img src="../assets/images/a0.jpg" alt="...">
+                  <img src="images/user.png" alt="...">
                   <i class="on b-white bottom"></i>
                 </span>
                 <span class="hidden-sm-down _500">Naman</span>
@@ -167,9 +156,9 @@
               <button class="btn btn-outline b-info text-info" style="margin-right: 10px">
                 <i class="fa fa-credit-card" style="padding-right: 10px"></i>Available Bal: R100.00
               </button>
-              <button class="btn btn-fw info">
+              <a class="btn btn-fw info" href="top-up.html">
                 <i class="fa fa-plus" style="padding-right: 5px"></i> Top Up
-              </button>
+              </a>
             </div>
           </div>
 
@@ -209,7 +198,8 @@
                       <td>WEDFG1244RT35ERT</td>
                       <td>Registration</td>
                       <td>R1,000.00</td>
-                      <td class="text-danger">Failed</td>
+                      <td class="text-danger"><a data-toggle="modal" data-dismiss="modal" data-target="#failure"></a>
+                          Failed</a></td>
                     </tr>
                     <tr>
                       <td>26-08-2024</td>
@@ -252,6 +242,26 @@
 
     <!-- ############ LAYOUT END-->
   </div>
+  <!-- Successful Modal -->
+  <div class="modal fade" id="failure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title d-flex align-items-center" id="exampleModalLabel"><i
+              class="fa  fa-times-circle text-danger mr-2" style="font-size: 26px;"></i>Failure Reason</h5>
+
+        </div>
+        <div class="modal-body">
+          Reason of Failure will be ####
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn text-white info" aria-label="Close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Ends -->
   <!-- jQuery -->
   <script src="js/salesChart.js"></script>
   <script src="js/jquery.js"></script>

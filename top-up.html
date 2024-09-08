@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard</title>
+  <title>Top Up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
   <!-- ################ FAVICON -->
   <!-- <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png"> -->
@@ -42,9 +42,7 @@
               <li>
                 <a href="dashboard.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/dashboard.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">Dashboard</span>
                 </a>
@@ -52,19 +50,15 @@
               <li>
                 <a href="affiliates.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/affiliates.svg" alt="" height="17px">
                   </span>
-                  <span class="nav-text">Create Affiliates</span>
+                  <span class="nav-text">Affiliates</span>
                 </a>
               </li>
               <li>
                 <a href="affiliates-commission.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/commission.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">Affiliates Commission</span>
                 </a>
@@ -72,23 +66,18 @@
               <li>
                 <a href="supacash.html">
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
+                    <img src="images/voucher.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">SupaCash</span>
                 </a>
               </li>
-
               <li>
                 <a>
                   <span class="nav-caret">
                     <i class="fa fa-caret-down"></i>
                   </span>
                   <span class="nav-icon">
-                    <i class="material-icons">&#xe1b8;
-                      <span ui-include="'../assets/images/i_8.svg'"></span>
-                    </i>
+                    <img src="images/Reports.svg" alt="" height="17px">
                   </span>
                   <span class="nav-text">Reports</span>
                 </a>
@@ -139,7 +128,7 @@
             <li class="nav-item dropdown">
               <a href class="nav-link dropdown-toggle text-ellipsis p-0" data-toggle="dropdown">
                 <span class="avatar w-32">
-                  <img src="../assets/images/a0.jpg" alt="...">
+                  <img src="images/user.png" alt="...">
                   <i class="on b-white bottom"></i>
                 </span>
                 <span class="hidden-sm-down _500">Naman</span>
@@ -160,87 +149,40 @@
         <!-- ############ PAGE START-->
         <div class="padding">
           <div class="box-header row m-0 px-0 pt-0">
-            <div class="col-12 col-sm-4 px-0">
-              <h5 class="m-0 mt-2 mt-sm-0 _500">SupaCash</h5>
+            <div aria-label="breadcrumb">
+              <ol class="breadcrumb p-0 m-0">
+                <li class="breadcrumb-item"><a href="supacash.html" class="m-0 mt-2 mt-sm-0 _500">
+                    <h5 class="m-0 mt-2 mt-sm-0 _500">SupaCash</h5>
+                  </a></li>
+                <li class="breadcrumb-item active mx-2" aria-current="page">
+                  <h5 class="m-0 mt-2 mt-sm-0 _500">/</h5>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <h5 class="m-0 mt-2 mt-sm-0 _500">Top Up</h5>
+                </li>
+              </ol>
             </div>
-            <div class="col-12 col-sm-8 d-flex justify-content-sm-end pt-3 pt-sm-0 px-0">
-              <button class="btn btn-outline b-info text-info" style="margin-right: 10px">
-                <i class="fa fa-credit-card" style="padding-right: 10px"></i>Available Bal: R100.00
-              </button>
-              <button class="btn btn-fw info">
-                <i class="fa fa-plus" style="padding-right: 5px"></i> Top Up
-              </button>
-            </div>
+
           </div>
 
           <div class="col-12 p-0">
             <div class="box">
-              <div class="box-header">
-                <div class="form-group row m-0">
-                  <div class="col-sm-4 p-0">
-                    <input type="text" class="form-control rounded" placeholder="search" />
+              <div class="box-header pb-0">
+                <h2>SupaBets</h2>
+              </div>
+              <div class="box-body">
+                <form role="form" class="p-0 m-0" id="addMoney">
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 form-control-label">Amount</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="inputEmail3" placeholder="Enter The Amount">
+                    </div>
                   </div>
-                </div>
+                  <div class="col-12 p-0 m-0 pt-sm-3 text-right">
+                    <button type="submit" class="btn info m-b">Submit</button>
+                  </div>
+                </form>
               </div>
-              <div class="table-responsive p-0 m-0 px-3">
-                <table class="table table-striped b-t">
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>Affiliate ID</th>
-                      <th>Transaction ID</th>
-                      <th>Transaction Type</th>
-                      <th>Value</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>26-08-2024</td>
-                      <td>AF1001</td>
-                      <td>WEDFG1244RT35ERT</td>
-                      <td>Registration</td>
-                      <td>R1,000.00</td>
-                      <td class="text-success">Success</td>
-                    </tr>
-                    <tr>
-                      <td>26-08-2024</td>
-                      <td>AF1001</td>
-                      <td>WEDFG1244RT35ERT</td>
-                      <td>Registration</td>
-                      <td>R1,000.00</td>
-                      <td class="text-danger">Failed</td>
-                    </tr>
-                    <tr>
-                      <td>26-08-2024</td>
-                      <td>AF1001</td>
-                      <td>WEDFG1244RT35ERT</td>
-                      <td>Registration</td>
-                      <td>R1,000.00</td>
-                      <td class="text-success">Success</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <nav aria-label="Page navigation example">
-                <ul class="pagination m-0 pb-3 justify-content-center">
-                  <li class="page-item">
-                    <a class="page-link" href="#">Previous</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
             </div>
           </div>
         </div>
@@ -249,13 +191,36 @@
       </div>
     </div>
     <!-- / -->
-
     <!-- ############ LAYOUT END-->
   </div>
+  <!-- Modal -->
+  <!-- Confirmation Modal -->
+  <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title d-flex align-items-center" id="exampleModalLabel"><i
+              class="fa  fa-check-circle text-success mr-2" style="font-size: 26px;"></i>Transaction Successful</h5>
+
+        </div>
+        <div class="modal-body">
+          Transaction has been done successfully!
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn text-white info" href="supacash.html">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL ends -->
+
   <!-- jQuery -->
   <script src="js/salesChart.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/modalScripts.js"> </script>
+  <script src="js/navScript.js"></script>
   <!-- endbuild -->
 </body>
 
